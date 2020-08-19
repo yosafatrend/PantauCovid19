@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5570F9</color>
+    <color name="colorPrimaryDark">#5570F9</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorNav">#D77A4F</color>
+    <color name="colorNavItem">#393A3C</color>
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#535353</color>
+    <color name="softBlue">#778beb</color>
+    <color name="rosyHighlignt">#f7d794</color>
+    <color name="creamyPeach">#f3a683</color>
+    <color name="brewedMustard">#e77f67</color>
+    <color name="oldGeranium">#cf6a87</color>
+</resources>

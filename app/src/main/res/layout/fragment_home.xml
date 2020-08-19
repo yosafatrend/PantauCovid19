@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        tools:background="@drawable/slider1" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/v_flipper"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/bg_round"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="COVID-19 Indonesia Terkini"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/lnprim"
+                    android:layout_width="match_parent"
+                    android:layout_height="120sp"
+                    android:layout_below="@+id/txt_head"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="123sp"
+                        android:layout_height="100sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_marginRight="5sp"
+                        android:background="@drawable/bg_positif"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="96sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="7sp"
+                            android:src="@drawable/positif"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-121sp"
+                            android:layout_marginLeft="-121sp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp">
+
+                            <TextView
+                                android:id="@+id/txt_positif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensansergular"
+                                android:text="Positif"
+                                android:layout_marginTop="1sp"
+                                android:textColor="#FFFF"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/tv_positif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensansbold"
+                                android:layout_marginTop="25sp"
+                                android:textAlignment="center"
+                                android:textColor="#FFFF"
+                                android:textSize="25sp"
+                                tools:text="769" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln2"
+                        android:layout_width="123sp"
+                        android:layout_height="100sp"
+                        android:layout_marginEnd="5sp"
+                        android:layout_marginRight="5sp"
+                        android:background="@drawable/bg_sembuh"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="96sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="7sp"
+                            android:src="@drawable/sembuh"
+                             />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-121sp"
+                            android:layout_marginLeft="-121sp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp">
+
+                            <TextView
+                                android:id="@+id/txt_sembuh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensansergular"
+                                android:text="Sembuh"
+                                android:layout_marginTop="1sp"
+                                android:textColor="#FFFF"
+                                android:textSize="13sp" />
+
+
+                            <TextView
+                                android:id="@+id/tv_sembuh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensansbold"
+                                android:layout_marginTop="25sp"
+                                android:textAlignment="center"
+                                android:textColor="#FFFF"
+                                android:textSize="25sp"
+                                tools:text="769" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln3"
+                        android:layout_width="123sp"
+                        android:layout_height="100sp"
+                        android:background="@drawable/bg_meninggal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="96sp"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginTop="7sp"
+                            android:src="@drawable/meninggal"
+                             />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-121sp"
+                            android:layout_marginLeft="-121sp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="15dp">
+
+                            <TextView
+                                android:id="@+id/txt_meninggal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensansergular"
+                                android:text="Meninggal"
+                                android:layout_marginTop="1sp"
+                                android:textColor="#FFFF"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/tv_meninggal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensansbold"
+                                android:layout_marginTop="25sp"
+                                android:textAlignment="center"
+                                android:textColor="#FFFF"
+                                android:textSize="25sp"
+                                tools:text="769"  />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line_separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/lnprim"
+                    android:layout_marginBottom="20dp"
+                    android:background="#C9C9C9"/>
+
+                <TextView
+                    android:id="@+id/txt_head2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line_separator"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="Data Provinsi"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ln7"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_below="@+id/txt_head2"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/select_prov"
+                        android:layout_width="300sp"
+                        android:layout_height="37dp"
+                        android:background="@drawable/bg_selectprov"
+                        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                        android:fontFamily="@font/opensansergular"
+                        android:paddingLeft="5dp"
+                        android:textColor="#353434"
+                        android:textSize="15sp"
+                        tools:text="Jawa Tengah" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_down">
+
+                        <ImageView
+                            android:id="@+id/imgdroopdown"
+                            android:layout_width="35sp"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:background="@drawable/bg_down1">
+
+                        <ImageView
+                            android:id="@+id/imgsearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:padding="7dp"
+                            android:src="@drawable/ic_search1" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prog_positif"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_sembuh_prov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sembuh"
+                        android:textColor="@color/colorTextSubtitle" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_sembuh_prov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextSubtitle"                         tools:text="769" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/prog_sembuh"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ln4"
+                    android:layout_marginBottom="10dp"
+                    android:progressBackgroundTint="#ebebeb"
+                    android:progressTint="#5FEC93" />
+
+                <LinearLayout
+                    android:id="@+id/ln5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prog_sembuh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_mening_prov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meninggal"
+                        android:textColor="@color/colorTextSubtitle"  />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_mening_prov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextSubtitle"
+                        tools:text="769" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/prog_mening"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ln5"
+                    android:layout_marginBottom="25dp"
+                    android:progressBackgroundTint="#ebebeb"
+                    android:progressTint="#FF6565" />
+
+                <LinearLayout
+                    android:id="@+id/ln6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ln7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_positif_prov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Positif"
+                        android:textColor="@color/colorTextSubtitle"  />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_positif_prov"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextSubtitle"
+                        tools:text="769" />
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/prog_positif"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ln6"
+                    android:progressBackgroundTint="#ebebeb"
+                    android:progressTint="#FFA837"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+
